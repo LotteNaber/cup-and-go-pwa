@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ffffff;
+  color: #070334;
+  text-align: center;
+}
+
+header {
+  background: #87CEFA;
+  color: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.search-container {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #87CEFA;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 across */
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 12px;
+}
+
+.menu-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ✅ Removed centering for items 5 and 6 so they align left naturally */
+.menu-item:nth-child(5),
+.menu-item:nth-child(6) {
+  grid-column: auto;   /* let them flow into the grid normally */
+  justify-self: start; /* align left */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr; /* 1 per row on phones */
+  }
+}

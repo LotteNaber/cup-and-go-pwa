@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfcf7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #4a2c2a;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  #qr-reader {
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  #qr-result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2a7a2a;
+  }
+  
+  #fallback-btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4a2c2a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #fallback-btn:hover {
+    background-color: #6a3c38;
+  }
+
+  /* Fix mirrored camera preview */
+#qr-reader video {
+    transform: scaleX(-1); /* flips horizontally */
+  }
+    
