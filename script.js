@@ -17,10 +17,5 @@ function onScanSuccess(decodedText, decodedResult) {
     });
     qrScanner.render(onScanSuccess);
   
-    // Fallback button handler
-    document.getElementById("fallback-btn").addEventListener("click", () => {
-      // Replace with your actual menu URL or local file
-      window.location.href = "https://lottenaber.github.io/cup-go-pwa/menu.html";
-    });
   });
   
